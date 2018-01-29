@@ -1,0 +1,139 @@
+/* Simple normalization */
+* {
+  margin : 0;
+  padding: 0;
+}
+
+body{
+  background-color: grey;
+}
+
+/* NAVIGATION BAR STYLES -------------------------------- */
+.navigation {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.LScontainer{
+  float:right;
+  margin: 5px auto;
+
+}
+
+.LSbuttons {
+  font-size: 16px;
+  padding : 3px 6px;
+  margin: 2px auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navigation a {
+  float:left;
+  text-align: center;
+  font-size: 18px;
+  font-family: monospace,sans-serif;
+  padding : 14px 16px;
+  color : white;
+  text-decoration: none;
+}
+
+.navigation a:hover{
+  background-color:#27a7d8;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.navigation a.active{
+  background-color: #ff9a00;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+/* End of Navigation Bar style ----------------------------*/
+
+.sectionContainer {
+  margin: 2em auto;
+  margin-left: 1em;
+  margin-right: 1em;
+  border: 0.3em solid black;
+  border-radius: 12px;
+}
+
+.divWrapper {
+  border: 0.5em solid #27a7d8;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.4);
+
+}
+
+/* Home icon and slogan style ------------------------------*/
+#sitePic {
+  border : 3px solid white;
+  margin-left: 0.5em;
+  margin: auto;
+  margin-left: 0.35em;
+  margin-top:0.3em;
+  margin-bottom: 0.2em;
+  width : 60%;
+}
+
+#slogan{
+  font-size: 3.5vw;
+  font-weight: 800;
+  font-family: cursive,sans-serif;
+  text-shadow: 2px 2px gray;
+  text-align: center;
+  float : right;
+  margin : auto;
+  margin-right: 0.35em;
+  margin-top:0.2em;
+  margin-bottom: 0.2em;
+  padding-bottom: 1em;
+  border : 3px solid white;
+  background-color: rgba(0,0,0,0.2);
+  width: 33%;
+}
+/*  End of Home icon and slogan style ------------------------------*/
+
+/*  Service Description style --------------------------------------*/
+.descriptionService {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  text-shadow: 2px 2px gray;
+  font-size: 3em;
+  font-family: monospace,sans-serif;
+
+}
+
+.ads {
+  margin:1em auto;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-family: "Lucida Console", Monaco, monospace;
+  border: 2em solid black;
+  padding: 2em;
+  text-shadow: 2px 2px gray;
+
+}
+
+.ads dt{
+  margin-left: 1.5em;
+  font-size: 2em;
+  font-weight: 700;
+
+}
+
+.ads dd {
+  text-align: right;
+  margin-right: 2.5em;
+  margin-left: 50%;
+  font-size: 1.5em;
+}
+/* End of Service Description style ------------------------------*/
+
+#theTest{
+
+}
