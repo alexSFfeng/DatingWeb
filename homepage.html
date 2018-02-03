@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="css/homepage.css">
+  <title>Dating Bot</title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <nav id="menuBar" class="navigation">
       <a class="active" href="#home">HOME</a>
       <a href="#service">SERVICE DESCRIPTION</a>
-      <a href="#">TAKE A TEST</a>
+      <a href="#personalityTest">TAKE A TEST</a>
       <div class="LScontainer">
         <button type="button" class="LSbuttons"> LOGIN</button>
         <button type="button" class="LSbuttons"> SIGN UP</button>
@@ -26,15 +26,14 @@
   <div id="home" class="homeIcon">
 
     <div class="sectionContainer">
-      <div class="divWrapper">
-
-        <img id="sitePic" src="images/dogPic.jpg"/>
-
+      <div id="iconDiv">
+        <img id="sitePic" src="images/portalDating.jpg"/>
         <p id="slogan"> ...We... <br />....only find.... <br /> ...REAL love...
-          <br /> -------- <br /> Agents at your service. <br /> --------?????</p>
+          <br /> -------- <br /> Agents at your service. <br /> --------?????
+          <br /> ❤️❤️❤️❤️</p>
 
-        </div>
       </div>
+    </div>
 
   </div>
 
@@ -43,7 +42,7 @@
 
     <div class="sectionContainer">
       <div class="divWrapper">
-        <h1 class="descriptionService">Our service :</h1>
+        <h1 class="descriptionService">Our service 🤖:</h1>
 
         <br />
 
@@ -66,10 +65,19 @@
       <div class="divWrapper">
         <h1 class="descriptionService">To Get Started . . .</h1>
 
-        <br /> <br /> <br />
-        <a href="https:www.16personalities.com/free-personality-test">personality</a>
-        <iframe frameborder="1" width="600" height="600" src="http://www.personalityperfect.com/test/free-personality-test/"></iframe>
+        <br />
+        <p class="instructions"> Take this personality test to see who you resemble 🤔🤔 <br />
+        *REMEMBER YOUR RESULTS!</p>
+        <br />
+        <a href="https://www.16personalities.com/free-personality-test" target="_blank"><img id="testPreview" src="images/test.png" /></a>
 
+        <br /> <hr /> <br />
+
+        <!-- Result sign up form -->
+        <p class="instructions"> Enter your information ℹ️: </p>
+        <form id="signupForm">
+          <label>NAME: </label> <input type="text" placeholder="Full Name" required></input>
+        </form>
 
 
       </div>
