@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/homepage.css">
+  <script src="js/homepage.js"></script>
   <title>Dating Bot</title>
 </head>
 
@@ -16,18 +17,20 @@
       <a href="#service">SERVICE DESCRIPTION</a>
       <a href="#personalityTest">TAKE A TEST</a>
       <div class="LScontainer">
-        <button type="button" class="LSbuttons"> LOGIN</button>
-        <button type="button" class="LSbuttons"> SIGN UP</button>
+        <button type="button" class="LSbuttons" onclick="displayModal()"> LOGIN</button>
+        <button type="button" class="LSbuttons" onclick="location.href='#signupPrompt'"> SIGN UP</button>
       </div>
     </nav>
   </div>
 
+  <div class="parallax" id="parallax1"></div>
+
   <!-- Site Icon + Slogan -->
-  <div id="home" class="homeIcon">
+  <div id="home" class="homeIcon bigDiv">
 
     <div class="sectionContainer">
       <div id="iconDiv">
-        <img id="sitePic" src="images/portalDating.jpg"/>
+        <img id="sitePic" src="images/portalDating.jpg" alt="site symbol of love"/>
         <p id="slogan"> ...We... <br />....only find.... <br /> ...REAL love...
           <br /> -------- <br /> Agents at your service. <br /> --------?????
           <br /> ❤️❤️❤️❤️</p>
@@ -37,8 +40,10 @@
 
   </div>
 
+  <div class="parallax" id="parallax2"></div>
+
   <!-- Service Description -->
-  <div id="service">
+  <div id="service" class="bigDiv">
 
     <div class="sectionContainer">
       <div class="divWrapper">
@@ -58,8 +63,10 @@
     </div>
   </div>
 
+  <div class="parallax" id="parallax3"></div>
+
   <!-- personality test -->
-  <div id="personalityTest">
+  <div id="personalityTest" class="bigDiv">
 
     <div class="sectionContainer">
       <div class="divWrapper">
@@ -69,18 +76,69 @@
         <p class="instructions"> Take this personality test to see who you resemble 🤔🤔 <br />
         *REMEMBER YOUR RESULTS!</p>
         <br />
-        <a href="https://www.16personalities.com/free-personality-test" target="_blank"><img id="testPreview" src="images/test.png" /></a>
+        <a href="https://www.16personalities.com/free-personality-test" target="_blank"><img id="testPreview" src="images/test.png" alt="16personalities"/></a>
 
         <br /> <hr /> <br />
 
         <!-- Result sign up form -->
-        <p class="instructions"> Enter your information ℹ️: </p>
+        <p id="signupPrompt" class="instructions"> Enter your information ℹ️: </p>
+        <br />
         <form id="signupForm">
-          <label>NAME: </label> <input type="text" placeholder="Full Name" required></input>
+          <label id="formTitle">-------- TEST SUBJECT INFO --------</label>
+          <br /><br /><br />
+          <label>NAME: </label> <input type="text" placeholder="Full Name" id="username" required>
+          <label>EMAIL: </label> <input type="email" placeholder="Email" id="userEmail" required>
+
+          <br /><br /><br />
+          <label>Password: </label> <input type="text" placeholder="Password" id="password" required>
+          <label>Re-enter Passord: </label> <input type="email" placeholder="Re-enter password" id="confirmPassword" required>
+
+          <br /><br /><br />
+          <label>Personality Result: </label> <input type="text" placeholder="Result (Example: I.S.T.J)" id="trait" required>
+          <label>Character Type: </label> <input type="text" placeholder="Type (Example: Logistician)" id="characterType" required>
+
+          <br /><br /><br />
+          <label>By submitting this form, you are agreeing to our privacy policies.</label>
+
+          <br /><br /><br />
+          <input class="submitBttn" id="signupBttn" type="submit" value="SIGN UP">
+
         </form>
 
 
       </div>
+    </div>
+  </div>
+
+  <div class="parallax" id="parallax4"></div>
+
+
+  <!-- Login page pop up -->
+  <div class="popupLogin" id="modal">
+    <div class="loginContent">
+      <span class="closeIcon" onclick="closeModal()">&times;</span>
+      <br /><br />
+      <p class="instructions">Employee 🤖 / User 👨‍💼👩‍💼:</p>
+      <br />
+      <form id="loginForm">
+
+        <br /><br />
+        <label>Change Login Option: </label>
+        <select class="loginOptions">
+            <option>Agent</option>
+            <option>User</option>
+        </select>
+
+        <br /><br /><br />
+        <label>Email / Employee ID: </label> <input type="text" placeholder="Email/Employee ID" id="emailID" required>
+        <label>Password: </label> <input type="text" placeholder="Password" id="pass" required>
+
+        <br /><br /><br />
+        <label><a href="#">Forgot Password ?</a></label>
+
+        <br /><br /><br />
+        <input class="submitBttn" id="loginBttn" type="submit" value="LOGIN">
+      </form>
     </div>
   </div>
 

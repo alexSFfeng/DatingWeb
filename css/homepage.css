@@ -4,10 +4,11 @@
   padding: 0;
 }
 
+
 body{
   margin : 0;
-  background-color: white;
   font-family: "Lucida Console", Monaco, monospace;
+  background-color: transparent;
   padding-top: 3%;
 }
 
@@ -19,7 +20,7 @@ body{
   position: fixed;
   width : 100%;
   -webkit-transform: translateZ(0);
-  z-index: 1000;
+  z-index: 1;
   top: 0;
 }
 
@@ -63,19 +64,22 @@ body{
 
 #homeIcon {
   top: 20%;
+  background-color: transparent;
+
 }
 
 .sectionContainer {
   margin: 2em auto;
   margin-left: 1em;
   margin-right: 1em;
+  background: none;
   border: 0.3em solid black;
-
   -webkit-animation: fadein 3.5s; /* Safari, Chrome and Opera > 12.1 */
    -moz-animation: fadein 3.5s; /* Firefox < 16 */
     -ms-animation: fadein 3.5s; /* Internet Explorer */
-        animation: fadein 3.5s;
+  background-color: transparent;
 }
+
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -187,3 +191,147 @@ body{
 }
 
 /* End of personality test style ----------------------------------*/
+
+/* Start of sign up form ----------------------------------------------*/
+form#signupForm, form#loginForm {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  display: block;
+  width: 85%;
+  padding: 30px;
+  padding-top: 40px;
+  /*justify-content: center;*/
+  text-align: center;
+  background-color: white;
+}
+
+#signupForm input, #loginForm input{
+  box-sizing: border-box;
+  padding: .8em 0 10px .8em;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+#signupForm label, #loginForm label{
+  padding: .8em 0 10px .8em;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+#signupForm label#formTitle{
+  font-family: inherit;
+  font-size: 26px;
+  padding: .8em 0 10px .8em;
+  border: 1px dashed black;
+  padding-left:0;
+}
+
+#trait::-webkit-input-placeholder,
+#characterType::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  white-space:pre-line;
+  position:relative;
+  top:-7px;
+
+}
+
+#signupForm input.submitBttn, #loginForm input.submitBttn {
+  border: none;
+  width: 15%;
+  font-size: 26px;
+  background-color: black;
+  color:white;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#signupForm input.submitBttn:hover, #loginForm input.submitBttn:hover {
+  background-color: #888888;
+}
+/* End of sign up form style --------------------------------*/
+
+/* Start of login popup modal style ---------------------------------*/
+.popupLogin {
+    display: none;
+    position: fixed;
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.loginContent {
+  background-color: white;
+  margin : 15% auto;
+  padding : 25px;
+  box-shadow: 5px 8px #777777;
+  width : 80%;
+}
+
+.closeIcon {
+  float: right;
+  font-size: 36px;
+  color:black;
+}
+
+.closeIcon:hover{
+  color:grey;
+}
+
+form#loginForm {
+  width:90%;
+  margin-bottom: 1em;
+}
+
+.loginOptions {
+  border : 1px solid white;
+  background-color: grey;
+  font-size: 1.5em;
+  padding : 10px;
+  color: white;
+  border-radius: 0px;
+  width: 40%;
+  text-align: center;
+  /* Chrome no round corners */
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+
+}
+
+/* End of login pop up page ----------------------------------*/
+
+/* Start of parallax effect styling ----------------------------*/
+.parallax {
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parallax1 {
+  background-image: url("../images/parallax1.jpg");
+}
+
+#parallax2 {
+  background-image: url("../images/parallax2.jpg");
+}
+
+#parallax3 {
+  background-image: url("../images/parallax3.jpg");
+}
+
+#parallax4 {
+  background-image: url("../images/parallax4.jpg");
+}
+
+.sectionContainer.bigDiv {
+  background-color: transparent;
+}
