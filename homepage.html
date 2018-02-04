@@ -13,13 +13,17 @@
   <!-- navigation bar for moving through pages and signing up and logging on -->
   <div>
     <nav id="menuBar" class="navigation">
-      <a class="active" href="#home">HOME</a>
-      <a href="#service">SERVICE DESCRIPTION</a>
-      <a href="#personalityTest">TAKE A TEST</a>
-      <div class="LScontainer">
+      <ul>
+      <li><a class="active" href="#home">HOME</a></li>
+      <li><a href="#service">SERVICE DESCRIPTION</a></li>
+      <li><a href="#personalityTest">TAKE A TEST</a></li>
+      <li id="rightRegistration">
+        <div class="LScontainer">
         <button type="button" class="LSbuttons" onclick="displayModal()"> LOGIN</button>
         <button type="button" class="LSbuttons" onclick="location.href='#signupPrompt'"> SIGN UP</button>
-      </div>
+        </div>
+      </li>
+    </ul>
     </nav>
   </div>
 

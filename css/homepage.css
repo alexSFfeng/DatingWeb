@@ -8,7 +8,6 @@
 body{
   margin : 0;
   font-family: "Lucida Console", Monaco, monospace;
-  background-color: transparent;
   padding-top: 3%;
 }
 
@@ -22,12 +21,6 @@ body{
   -webkit-transform: translateZ(0);
   z-index: 1;
   top: 0;
-}
-
-.LScontainer{
-  float:right;
-  margin: 5px auto;
-
 }
 
 .LSbuttons {
@@ -60,6 +53,38 @@ body{
   border-right: 2px solid white;
 }
 
+.navigation ul{
+  display: inline-block;
+  width: 100%;
+}
+
+.navigation ul li{
+  display: inline-block;
+}
+
+.LScontainer{
+  margin: 5px auto;
+  text-align: center;
+}
+
+#rightRegistration {
+  float:right;
+  height: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .navigation ul{
+    display: block;
+  }
+  .navigation ul li {
+    width: 100%;
+  }
+  .navigation ul li a{
+    width: 100%;
+  }
+}
+
 /* End of Navigation Bar style ----------------------------*/
 
 #homeIcon {
@@ -75,8 +100,6 @@ body{
   background: none;
   border: 0.3em solid black;
   -webkit-animation: fadein 3.5s; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: fadein 3.5s; /* Firefox < 16 */
-    -ms-animation: fadein 3.5s; /* Internet Explorer */
   background-color: transparent;
 }
 
