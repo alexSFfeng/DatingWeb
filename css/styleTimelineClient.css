@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./../picSrc/background.jpg");
+}
+.timelinePage{
+    float:left;
+    width: 100%;
+    overflow: hidden;
+}
+
+.clientMenu{
+    height: 100vh;
+    left: 0px;
+    width: 17vw;
+    min-width: 50px;
+    background-color: slategray;
+    float: left;
+    padding-top: 30px;
+    opacity: 0.8;
+}
+
+.clientMenu a{
+    text-decoration: none;
+}
+
+#clientPic{
+    object-fit: cover;
+    overflow: hidden;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    margin-bottom: 2vh;
+}
+
+.menuElements{
+    font-size: 3vw;
+    font-family: monospace,sans-serif;
+    text-align: center;
+}
+
+.sectionName{
+    line-height: 15vh;
+}
+
+.menuElements li{
+    list-style-type: none;
+}
+
+.targetstoPick{
+  text-align: center;
+  font-family: monospace, sans-serif;
+  font-size: 120%;
+  width: 10vw;
+  background: transparent;
+  color: aliceblue;
+  border: none;
+}
+
+#headerTimeline{
+    font-size: 6vw;
+    font-family: Georgia, sans-serif;
+    width: 40vw;
+    margin-bottom: 3vh;
+    margin-right: 3vw;
+    color: white;
+    float: left;
+    margin-left: 3vw;
+    margin-bottom: 20vh;
+}
+
+.taskPic{
+    display: inline-block;
+    width: 10vw;
+    height: auto;
+    margin-left: 20vw;
+    margin-top: 3vh;
+}
+
+#taskpic{
+    width: 10vw;
+    height: auto;
+}
+
+.timeline{
+    width: 100%;
+    height: 100%;
+}
+
+.schedule{
+    display: inline-block;
+    width: 79vw;
+    height: 100%;
+    margin-left: 2vw;
+}
+
+.schedule li{
+    display: inline-block;
+    vertical-align: top;
+    width: 10vw;
+    height: auto;
+    margin-right: 1vw;
+}
+
+.schedule h5{
+    font-family: monospace, sans-serif;
+    font-size: 180%;
+    font-weight: normal;
+    color: aliceblue;
+    text-align: center;
+}
+
+.task{
+    vertical-align: top;
+}
+
+#addTask{
+    width: 5vw;
+    height: 5vw;
+    display: inline-block;
+}
+.schedule textarea{
+    width: auto;
+    height: auto;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 120%;
+    background: rgba(12, 32, 44, 0.3);
+    resize: none;
+    
+    color: white;
+}
+
+#submit{
+    float: right;
+    margin-right: 5vw;
+    margin-bottom: 3vh;
+    width: 8vw;
+    height: 4vh;
+    background: rgba(30, 30, 30, 0.3);
+    color: white;
+}
+

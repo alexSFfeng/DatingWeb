@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test subjects</title>
+    <link rel="stylesheet" href="./../css/styleClient.css" />
+
+ 
+</head>
+
+
+<body>
+    <div class="targetPage">
+    <div id="clientMenu" class="clientMenu">
+        <img id="clientPic" src="./../picSrc/Glados.jpg" alt="profilePic">
+        <ul class="menuElements">
+            <li><a class="sectionName" href="">TARGETS</a></li>
+            <li><a class="sectionName" href="#">TIMELINE</a></li>
+        </ul>
+    </div>
+
+    <h3 id="headerTargets">Targets</h3>
+    <div class="targets">
+        <div class="completedTargets" id = "target1" onclick="highLight(this)">
+            <h4 class="wanted">WANTED</h4>
+            <img src="./../picSrc/emptyProfile.png" alt="WheatlyPic">
+            <h6 class="singleOrNot">Single or Not</h6>
+            <h5 class="targetName">Wheatly</h5>
+        </div>
+
+        <div class="completedTargets" id = "target2" onclick="highLight(this)" >
+            <h4 class="wanted">WANTED</h4>
+            <img src="./../picSrc/emptyProfile.png" alt="target2Pic">
+            <h6 class="singleOrNot">Single or Not</h6>
+            <h5 class="targetName">Alice</h5>
+        </div>
+
+        <div class="pendingTargets" id="pendingTarget" >
+            <h4 class="PENDING">PENDING</h4>
+            <img src="./../picSrc/emptyProfile.png" alt="chellPic">
+            <h6 class="singleOrNot">Single or Not</h6>
+            <h5 class = "targetName">Chell</h5>
+        </div>
+
+        <div class="addTarget">
+            <h4 id="AddTarget">Add Target</h4>
+            <button type="button" class= "addButton" id="addB" onclick="popAddpage()" >+</button>
+        </div>
+
+    </div>
+
+    <div class="popup_Info" id="popupPage">
+        <span class="close" id="closeLabel" onclick="closePop()">&times;</span>
+        <div class="targetPics">
+            <img id="targetPics" src="./../picSrc/emptyProfile.png" alt="clientPic">
+        </div>
+        <h5 id="Status">Status</h5>
+        <div class="status">
+            <button type="button" class="drop">DROP</button>
+            <button class="enroll">ENROLL</button>
+            <button class="waitlist">WAITLIST</button>
+        </div>
+        <div class="info" id="info">
+            <label>Name</label>
+            
+            <label>Birthday</label>
+            <input placeholder="Enter name" name="targetName" required>
+            <input placeholder="Enter birthday" name="targetBirthday" required>
+            <label>Email</label>
+            
+            <label>Phone</label>
+            <input placeholder="Enter email" name="targetEmail" required>
+            <input placeholder="format XXX-XXX-XXXX" name="targetNumber">
+            <label>Facebook</label>
+           
+            <label>Instagram</label>
+            <input placeholder="Enter Facebook" name="targetFacebook">
+            <input placeholder="Enter Instagram" name="targetInstagram">
+            <label id="addressL">Address</label>
+            <input id="addressI" placeholder="Enter address" name="targetAddress">
+            <label id="hobbiesL">Hobbies</label>
+            <textarea id="hobbiesI" placeholder="List all hobbies that you know the target has"></textarea>
+        </div>
+
+        <h5 id="rankL">Rank</h5>
+         <select class="rank">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <button type="submit" id="submit" onclick="submitForm()">submit</button>
+        </div>
+    </div>
+
+    <div class="chat" id="chatBox">
+        <h5 class="chatInfo">Need Advice?</h5>
+    </div>
+
+    <script src="./../javaScript/clientProfile.js"></script>
+</body>
+
+</html>
