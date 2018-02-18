@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url("./../picSrc/background.jpg");
+    background-image: url("./../images/background.jpg");
 }
 
 .targetPage{
@@ -449,7 +449,7 @@ body{
     height: 5vh;
     width: 20vw;
     background: silver;
-
+    margin-bottom: 2vh;
 }
 
 .chatInfo {
