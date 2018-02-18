@@ -96,6 +96,9 @@ function closePop(id){
 
 function submitForm(id){
   popupPage.style.display = "none";
+  var inputName = document.getElementById("newName").value;
+  var nametoChange = document.getElementById("pendingName");
+  nametoChange.innerHTML = inputName;
   pendingTarget.style.display = "inline-block";
 }
 

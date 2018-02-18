@@ -8,6 +8,7 @@ var message;
 var sendClick = 0;
 var storedMessages = ["......", "That sounds interesting!", "I guess...",
 "I'll give it a try; any other suggestions?"];
+var datetoChange;
 
 document.addEventListener("DOMContentLoaded", function(){
     popupButton = document.getElementById("addTask");
@@ -127,6 +128,16 @@ function addTasktoDate(id){
 */
     closePop();
 }
+}
+
+function submitNewTask(id){
+  datetoChange.innerHTML=
+}
+
+
+function changeTasktoDate(id){
+  datetoChange = document.getElementById(id);
+
 }
 
 function submitSchedule(id){

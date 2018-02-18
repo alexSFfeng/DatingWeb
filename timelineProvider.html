@@ -32,7 +32,7 @@
         <ul class="schedule">
             <li><h5>Monday</h5>
             <ul class="dailyTasks" id="mondayTask">
-                <li class="task">10:30 Catch her at PC Starbucks</li>
+                <li class="task" ondblclick="test(this)">10:30 Catch her at PC Starbucks</li>
                 <li class="task">12:10 Follow her to lunch from her class at CENTER 101</li>
                 <li class="task">20:50 Text her about the homework assignment</li>
             </ul></li>
@@ -75,6 +75,17 @@
     </div>
 
 </div>
+
+<div class = "popup" id="editPop">
+  <h3 id="edit">Edit to do</h3>
+  <span class="closeL" id="closeLabelforEdit" onclick="closePop(this)">&times;</span>
+  <input type="text" id="newTask"></input>
+  <button type="button" id="submitEditTask" onclick="submitNewTask(this)">Change task</button>
+</div>
+
+
+</div>
+
 
 <div class="chat" id="chatBox" >
   <span class="chatTitle" onclick="chatToggle()">Need Advice?</span>
