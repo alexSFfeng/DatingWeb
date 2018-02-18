@@ -12,8 +12,8 @@
     <div id="clientMenu" class="clientMenu">
         <img id="clientPic" src="./image/Glados.jpg" alt="clientPic">
         <ul class="menuElements">
-            <li><a class="sectionName" href="#">TARGETS</a></li>
-            <li><a class="sectionName" href="#">TIMELINE</a></li>
+            <li><a class="sectionName" href="file:///C:\Users\Dell\Desktop\CSE134B\DatingWeb\clientProfile.html">TARGETS</a></li>
+            <li><a class="sectionName" href="">TIMELINE</a></li>
         </ul>
     </div>
 
@@ -29,32 +29,33 @@
         <ul class="schedule">
             <li><h5>Monday</h5>
             <ul class="dailyTasks" id="mondayTask">
-                <li class="task">10:30 Catch her at PC Starbucks</li>
-                <li class="task">12:10 Follow her to lunch from her class at CENTER 101</li>
-                <li class="task">20:50 Text her about the homework assignment</li>
+                <li class="task" ondblclick="checkoffTask(this)">10:30 Catch her at PC Starbucks</li>
+                <li class="task" ondblclick="checkoffTask(this)">12:10 Follow her to lunch from her class at CENTER 101</li>
+                <li class="task" ondblclick="checkoffTask(this)">20:50 Text her about the homework assignment</li>
             </ul></li>
             <li><h5>Tuesday</h5>
             <ul class="dailyTasks" id="tuesdayTask"></ul></li>
             <li><h5>Wednesday</h5>
             <ul class="dailyTasks" id="wednesdayTask">
-                    <li class="task">10:30 Catch her at PC Starbucks</li>
-                    <li class="task">11:10 Sit next to her in class</li>
+                    <li class="task"  ondblclick="checkoffTask(this)">10:30 Catch her at PC Starbucks</li>
+                    <li class="task"  ondblclick="checkoffTask(this)">11:10 Sit next to her in class</li>
                 </ul></li>
             <li><h5>Thursday</h5>
             <ul class="dailyTasks" id="thursdayTask"></ul></li>
             <li><h5>Friday</h5>
                 <ul class="dailyTasks" id="fridayTask">
-                        <li class="task">10:30 Walk your dog in front of her</li>
-                        <li class="task">11:10 Say hi to her in class but do not sit with her, find a female friend to sit with.</li>
-                        <li class="task">23:45 Ask her if she want to come to your party tomorrow. If she refuse, say its your birthday party.</li>
+                        <li class="task"  ondblclick="checkoffTask(this)">10:30 Walk your dog in front of her</li>
+                        <li class="task"  ondblclick="checkoffTask(this)">11:10 Say hi to her in class but do not sit with her, find a female friend to sit with.</li>
+                        <li class="task"  ondblclick="checkoffTask(this)">23:45 Ask her if she want to come to your party tomorrow. If she refuse, say its your birthday party.</li>
                     </ul></li>
             <li><h5>Weekend</h5>
                 <ul class="dailyTasks" id = "weekendTask">
-                        <li class="task">All day Stay with her in the party and have your friends leave you guys alone.</li>
+                        <li class="task"  ondblclick="checkoffTask(this)">All day Stay with her in the party and have your friends leave you guys alone.</li>
                     </ul></li>
         </ul>
     </div>
 
 </div>
+<script src = "./js/timelineClient.js"></script>
 </body>
 </html>
