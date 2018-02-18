@@ -10,7 +10,7 @@
 <body>
     <div class="timelinePage">
     <div id="clientMenu" class="providerMenu">
-        <img id="providerPic" src="./images/add.png" alt="providerPic">
+        <img id="providerPic" src="./images/add.jpg" alt="providerPic">
         <ul class="menuElements">
             <li><a class="sectionName" href="#">TASKS</a></li>
             <li><a class="sectionName" href="#">TIMELINE</a></li>
@@ -18,41 +18,64 @@
     </div>
 
     <h3 id="headerTimeline">Timeline</h3>
-    <img id="addTask" src = "./images/add.jpg" alt="plusSign">
-    <div class="taskPic">
-        <img id="taskpic" src="./images/emptyProfile.png" alt="plusSign">
+    <div class="sameLine">
+        <div id="buttons" class="buttonClass">
+            <button id="addTask" onclick="popAddpage()">Add</button>
+            <!--<button id="editTasks" onclick="popEditpage()">Edit</button>-->
+        </div>
+        <div class="taskPic">
+            <img id="taskpic" src="./images/emptyProfile.png" alt="plusSign">
+        </div>
     </div>
+
     <div class="timeline">
         <ul class="schedule">
             <li><h5>Monday</h5>
-            <ul class="dailyTasks">
-                <li><textarea class="task">10:30 Catch her at PC Starbucks</textarea></li>
-                <li><textarea class="task">12:10 Follow her to lunch from her class at CENTER 101</textarea></li>
-                <li><textarea class="task">20:50 Text her about the homework assignment</textarea></li>
+            <ul class="dailyTasks" id="mondayTask">
+                <li class="task">10:30 Catch her at PC Starbucks</li>
+                <li class="task">12:10 Follow her to lunch from her class at CENTER 101</li>
+                <li class="task">20:50 Text her about the homework assignment</li>
             </ul></li>
-            <li><h5>Tuesday</h5></li>
+            <li><h5>Tuesday</h5>
+            <ul class="dailyTasks" id="tuesdayTask"></ul></li>
             <li><h5>Wednesday</h5>
-            <ul class="dailyTasks">
-                    <li><textarea class="task">10:30 Catch her at PC Starbucks</textarea></li>
-                    <li><textarea class="task">11:10 Sit next to her in class </textarea></li>
+            <ul class="dailyTasks" id="wednesdayTask">
+                    <li class="task">10:30 Catch her at PC Starbucks</li>
+                    <li class="task">11:10 Sit next to her in class</li>
                 </ul></li>
-            <li><h5>Thursday</h5></li>
+            <li><h5>Thursday</h5>
+            <ul class="dailyTasks" id="thursdayTask"></ul></li>
             <li><h5>Friday</h5>
-                <ul class="dailyTasks">
-                        <li><textarea class="task">10:30 Walk your dog in front of her</textarea></li>
-                        <li><textarea class="task">11:10 Say hi to her in class but do not sit with her, find a female friend to sit with.</textarea></li>
-                        <li><textarea class="task">23:45 Ask her if she want to come to your party tomorrow. If she refuse, say its your birthday party.</textarea></li>
+                <ul class="dailyTasks" id="fridayTask">
+                        <li class="task">10:30 Walk your dog in front of her</li>
+                        <li class="task">11:10 Say hi to her in class but do not sit with her, find a female friend to sit with.</li>
+                        <li class="task">23:45 Ask her if she want to come to your party tomorrow. If she refuse, say its your birthday party.</li>
                     </ul></li>
-            <li><h5>Saturday</h5>
-                <ul class="dailyTasks">
-                        <li><textarea class="task">All day Stay with her in the party and have your friends leave you guys alone.</textarea></li>
+            <li><h5>Weekend</h5>
+                <ul class="dailyTasks" id = "weekendTask">
+                        <li class="task">All day Stay with her in the party and have your friends leave you guys alone.</li>
                     </ul></li>
-            <li><h5>Sunday</h5></li>
         </ul>
 
-        <button type="submit" id="submit">submit</button>
+        <button type="submit" id="submit" onclick="submitSchedule(this)">submit</button>
 
+    <div class="popupTodo" id="todoList">
+        <h3 id="header">Add to do</h3>
+        <span class="close" id="closeLabel" onclick="closePop()">&times;</span>
+        <ul class="chooseDate" id="dateofWeek" >
+            <li id="monday" class="dates" onclick="chooseDate(this)">Monday</li>
+            <li id="tuesday" class="dates" onclick="chooseDate(this)">Tuesday</li>
+            <li id="wednesday" class="dates" onclick="chooseDate(this)">Wednesday</li>
+            <li id="thursday" class="dates" onclick="chooseDate(this)">Thursday</li>
+            <li id="friday" class="dates" onclick="chooseDate(this)">Friday</li>
+            <li id="weekend" class="dates" onclick="chooseDate(this)">Weekend</li>
+        </ul>
+        <input type="text" id="providerInput" placeholder="new task" >
+        <button type="button" id="addTaskButton" onclick="addTasktoDate(this)">Add task</button>
     </div>
+
 </div>
+
+<script src="./js/timelineProvider.js"></script>
 </body>
 </html>
