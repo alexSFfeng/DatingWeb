@@ -15,3 +15,26 @@ function displayModal(){
 function closeModal(){
   popupLogin.style.display="none";
 }
+
+function redirect(type){
+  event.target.preventDefault();                          
+  if(type == 'subject'){
+    window.location.href("../ClientProfile.html");
+  }
+  else{
+    window.location.href("../ProviderTargets.html");
+  }
+}
+
+function loginUser(){
+  var type = document.getElementById("loginOptions");
+  var typeStr = type.options[type.selectedIndex].text;
+
+  if(typeStr == "Agent"){
+    window.location.href("../ProviderTargets.html");
+  }
+  else{
+    window.location.href("../ClientProfile.html");
+
+  }
+}
