@@ -76,6 +76,29 @@
 
 </div>
 
+<div class="chat" id="chatBox" >
+  <span class="chatTitle" onclick="chatToggle()">Need Advice?</span>
+  <span class="open" id="openS" onclick="chatToggle()">&plus;</span>
+  <span class="close" id="closeS" onclick="chatToggle()">&minus;</span>
+    <div id="chatLog">
+      <div id="chat">
+        <div class="container">
+            <img src="./images/cat.jpg" alt="agent avatar" class="right"/>
+            <p class="response">Help!</p>
+        </div>
+        <div class="container">
+            <img src="./images/cat.jpg" alt="client avatar"/>
+            <p class="response">I think we need a new plan... She's not responding to my texts</p>
+        </div>
+      </div>
+      <div id="sendMessage">
+          <textarea placeholder="Leave a command for your test subjects." id="message"
+          rows="5" wrap="soft" spellcheck="true"></textarea>
+          <button id="sendBttn" onclick="newMessage()">&larr;</button>
+      </div>
+    </div>
+</div>
+
 <script src="./js/timelineProvider.js"></script>
 </body>
 </html>
