@@ -19,22 +19,21 @@ function closeModal(){
 function redirect(type){
   event.target.preventDefault();                          
   if(type == 'subject'){
-    window.location.href("../ClientProfile.html");
+    window.location.href("file:///C:\\Users\\Dell\\Desktop\\CSE134B\\DatingWeb\\ClientProfile.html");
   }
   else{
-    window.location.href("../ProviderTargets.html");
+    window.location.href("file:///C:\\Users\\Dell\\Desktop\\CSE134B\\DatingWeb\\ProviderTargets.html");
   }
 }
 
 function loginUser(){
-  var type = document.getElementById("loginOptions");
+  var type = document.getElementById("logOptions");
   var typeStr = type.options[type.selectedIndex].text;
-
-  if(typeStr == "Agent"){
-    window.location.href("../ProviderTargets.html");
+  if(typeStr === "Agent"){
+    window.location.href = "file:///C:\\Users\\Dell\\Desktop\\CSE134B\\DatingWeb\\ProviderTargets.html";
   }
   else{
-    window.location.href("../ClientProfile.html");
+    window.location.href = "file:///C:\\Users\\Dell\\Desktop\\CSE134B\\DatingWeb\\ClientProfile.html";
 
   }
 }

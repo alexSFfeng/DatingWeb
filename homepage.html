@@ -125,11 +125,11 @@
       <br /><br />
       <p class="instructions">Employee 🤖 / User 👨‍💼👩‍💼:</p>
       <br />
-      <form id="loginForm" action="loginUser()">
+      <form id="loginForm">
 
         <br /><br />
         <label>Change Login Option: </label>
-        <select class="loginOptions">
+        <select class="loginOptions" id = "logOptions">
             <option>Agent</option>
             <option>User</option>
         </select>
@@ -142,7 +142,7 @@
         <label><a href="#">Forgot Password ?</a></label>
 
         <br /><br /><br />
-        <input class="submitBttn" id="loginBttn" type="submit" value="LOGIN">
+        <input class="submitBttn" id="loginBttn" type="button" value="LOGIN" onclick="loginUser(this)">
       </form>
     </div>
   </div>
