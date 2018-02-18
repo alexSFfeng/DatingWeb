@@ -10,13 +10,7 @@ var storedMessages = ["......", "That sounds interesting!", "I guess...",
  * easier access later
  */
 document.addEventListener("DOMContentLoaded", function(){
-  popupButton = document.getElementById("addB");
-  popupPage = document.getElementById("popupPage");
-  closeL = document.getElementById("closeLabel");
-  pendingTarget = document.getElementById("pendingTarget");
-  target1 = document.getElementById("target1");
-  target2 = document.getElementById("target2");
-  targets = document.getElementsByClassName("targets");
+  targets = document.getElementsByClassName("dealingTargets");
   chatBox = document.getElementById("chatBox");
   chat = document.getElementById("chat");
   message = document.getElementById("message");
@@ -77,4 +71,14 @@ function chatToggle(){
   }
 
   chatOut = !chatOut;
+}
+
+function selectTarget(id){
+    id.style.opacity = 1;
+
+    for(var i = 0; i < targets.length; i++){
+        if(id != targets[i]){
+            targets[i].style.opacity = "";
+        }
+    }
 }

@@ -17,7 +17,7 @@ function closeModal(){
 }
 
 function redirect(type){
-  event.target.preventDefault();
+  event.target.preventDefault();                          
   if(type == 'subject'){
     window.location.href("../ClientProfile.html");
   }
