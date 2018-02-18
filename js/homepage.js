@@ -17,12 +17,8 @@ function closeModal(){
 }
 
 function redirect(type){
-  event.target.preventDefault();                          
-  if(type == 'subject'){
-    window.location.href("file:///C:\\Users\\Dell\\Desktop\\CSE134B\\DatingWeb\\ClientProfile.html");
-  }
-  else{
-    window.location.href("file:///C:\\Users\\Dell\\Desktop\\CSE134B\\DatingWeb\\ProviderTargets.html");
+  if(type === 'subject'){
+    window.location.href = "file:///Users/Xelafe/Documents/Winter18/CSE134B/DatingWeb/ClientProfile.html";
   }
 }
 
@@ -30,10 +26,10 @@ function loginUser(){
   var type = document.getElementById("logOptions");
   var typeStr = type.options[type.selectedIndex].text;
   if(typeStr === "Agent"){
-    window.location.href = "file:///C:\\Users\\Dell\\Desktop\\CSE134B\\DatingWeb\\ProviderTargets.html";
+    window.location.href = "file:///Users/Xelafe/Documents/Winter18/CSE134B/DatingWeb/ProviderTargets.html";
   }
   else{
-    window.location.href = "file:///C:\\Users\\Dell\\Desktop\\CSE134B\\DatingWeb\\ClientProfile.html";
+    window.location.href = "file:///Users/Xelafe/Documents/Winter18/CSE134B/DatingWeb/ClientProfile.html";
 
   }
 }

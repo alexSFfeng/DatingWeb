@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>Timeline</title>
-    <link rel="stylesheet" href="./css/styletimelineClient.css" />
+  <meta charset="utf-8" />
+  <title>Timeline</title>
+  <link rel="stylesheet" href="./css/styletimelineClient.css" />
 </head>
 
 
 <body>
-    <div class="timelinePage">
+  <div class="timelinePage">
     <div id="clientMenu" class="clientMenu">
-        <img id="clientPic" src="./image/Glados.jpg" alt="clientPic">
-        <ul class="menuElements">
-            <li><a class="sectionName" href="file:///C:\Users\Dell\Desktop\CSE134B\DatingWeb\clientProfile.html">TARGETS</a></li>
-            <li><a class="sectionName" href="">TIMELINE</a></li>
-        </ul>
+      <img id="clientPic" src="./images/Glados.jpg" alt="clientPic">
+      <ul class="menuElements">
+        <li><a class="sectionName" href="file:///Users/Xelafe/Documents/Winter18/CSE134B/DatingWeb/clientProfile.html">TARGETS</a></li>
+        <li><a class="sectionName" href="">TIMELINE</a></li>
+      </ul>
     </div>
 
     <h3 id="headerTimeline">Timeline</h3>
     <div class="taskPic">
-        <img id="taskpic" src="./image/emptyProfile.png" alt="emptyProfile">
-        <select class="targetstoPick">
-            <option value="Target1">Target1</option>
-            <option value="Target2">Target2</option>
-        </select>
+      <img id="taskpic" src="./images/emptyProfile.png" alt="emptyProfile">
+      <select class="targetstoPick">
+        <option value="Target1">Target1</option>
+        <option value="Target2">Target2</option>
+      </select>
     </div>
     <div class="timeline">
-        <ul class="schedule">
-            <li><h5>Monday</h5>
-            <ul class="dailyTasks" id="mondayTask">
-                <li class="task" ondblclick="checkoffTask(this)">10:30 Catch her at PC Starbucks</li>
-                <li class="task" ondblclick="checkoffTask(this)">12:10 Follow her to lunch from her class at CENTER 101</li>
-                <li class="task" ondblclick="checkoffTask(this)">20:50 Text her about the homework assignment</li>
-            </ul></li>
-            <li><h5>Tuesday</h5>
+      <ul class="schedule">
+        <li><h5>Monday</h5>
+          <ul class="dailyTasks" id="mondayTask">
+            <li class="task" ondblclick="checkoffTask(this)">10:30 Catch her at PC Starbucks</li>
+            <li class="task" ondblclick="checkoffTask(this)">12:10 Follow her to lunch from her class at CENTER 101</li>
+            <li class="task" ondblclick="checkoffTask(this)">20:50 Text her about the homework assignment</li>
+          </ul></li>
+          <li><h5>Tuesday</h5>
             <ul class="dailyTasks" id="tuesdayTask"></ul></li>
             <li><h5>Wednesday</h5>
-            <ul class="dailyTasks" id="wednesdayTask">
-                    <li class="task"  ondblclick="checkoffTask(this)">10:30 Catch her at PC Starbucks</li>
-                    <li class="task"  ondblclick="checkoffTask(this)">11:10 Sit next to her in class</li>
-                </ul></li>
-            <li><h5>Thursday</h5>
-            <ul class="dailyTasks" id="thursdayTask"></ul></li>
-            <li><h5>Friday</h5>
-                <ul class="dailyTasks" id="fridayTask">
-                        <li class="task"  ondblclick="checkoffTask(this)">10:30 Walk your dog in front of her</li>
-                        <li class="task"  ondblclick="checkoffTask(this)">11:10 Say hi to her in class but do not sit with her, find a female friend to sit with.</li>
-                        <li class="task"  ondblclick="checkoffTask(this)">23:45 Ask her if she want to come to your party tomorrow. If she refuse, say its your birthday party.</li>
+              <ul class="dailyTasks" id="wednesdayTask">
+                <li class="task"  ondblclick="checkoffTask(this)">10:30 Catch her at PC Starbucks</li>
+                <li class="task"  ondblclick="checkoffTask(this)">11:10 Sit next to her in class</li>
+              </ul></li>
+              <li><h5>Thursday</h5>
+                <ul class="dailyTasks" id="thursdayTask"></ul></li>
+                <li><h5>Friday</h5>
+                  <ul class="dailyTasks" id="fridayTask">
+                    <li class="task"  ondblclick="checkoffTask(this)">10:30 Walk your dog in front of her</li>
+                    <li class="task"  ondblclick="checkoffTask(this)">11:10 Say hi to her in class but do not sit with her, find a female friend to sit with.</li>
+                    <li class="task"  ondblclick="checkoffTask(this)">23:45 Ask her if she want to come to your party tomorrow. If she refuse, say its your birthday party.</li>
+                  </ul></li>
+                  <li><h5>Weekend</h5>
+                    <ul class="dailyTasks" id = "weekendTask">
+                      <li class="task"  ondblclick="checkoffTask(this)">All day Stay with her in the party and have your friends leave you guys alone.</li>
                     </ul></li>
-            <li><h5>Weekend</h5>
-                <ul class="dailyTasks" id = "weekendTask">
-                        <li class="task"  ondblclick="checkoffTask(this)">All day Stay with her in the party and have your friends leave you guys alone.</li>
-                    </ul></li>
-        </ul>
-    </div>
+                  </ul>
+                </div>
 
-</div>
-<script src = "./js/timelineClient.js"></script>
-</body>
-</html>
+              </div>
+              <div class="chat" id="chatBox" >
+                <span class="chatTitle" onclick="chatToggle()">Need Advice?</span>
+                <span class="open" id="openS" onclick="chatToggle()">&plus;</span>
+                <span class="close" id="closeS" onclick="chatToggle()">&minus;</span>
+                <div id="chatLog">
+                  <div id="chat">
+                    <div class="container sender">
+                      <img src="./images/cat.jpg" alt="client avatar"/>
+                      <p class="response">Hi, I think we need a new plan...</p>
+                    </div>
+                    <div class="container">
+                      <img src="./images/lovebots.jpg" alt="agent avatar" class="right"/>
+                      <p class="response">How can I help you?</p>
+                    </div>
+                  </div>
+                  <div id="sendMessage">
+                    <textarea placeholder="Type in your message here..." id="message"
+                    rows="5" wrap="soft" spellcheck="true"></textarea>
+                    <button id="sendBttn" onclick="newMessage()">&larr;</button>
+                  </div>
+                </div>
+              </div>
+
+              <script src = "./js/timelineClient.js"></script>
+            </body>
+            </html>

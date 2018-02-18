@@ -115,9 +115,8 @@ body{
 .schedule li{
     display: inline-block;
     vertical-align: top;
-    width: 10vw;
+    width: 12vw;
     height: auto;
-    margin-right: 1vw;
 }
 
 .schedule h5{
@@ -138,6 +137,9 @@ body{
 .dailyTasks li{
     margin-top: 1vh;
     margin-bottom: 1vh;
+    width: 100%;
+    word-break: normal;
+    word-wrap: break-word;
 }
 
 
@@ -240,4 +242,3 @@ ul{
     font-size: 300%;
     margin-right: 5%;
 }
-
