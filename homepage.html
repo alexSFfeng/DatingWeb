@@ -94,8 +94,8 @@
           <label>EMAIL: </label> <input type="email" placeholder="Email" id="userEmail" required>
 
           <br /><br /><br />
-          <label>Password: </label> <input type="text" placeholder="Password" id="password" required>
-          <label>Re-enter Passord: </label> <input type="email" placeholder="Re-enter password" id="confirmPassword" required>
+          <label>Password: </label> <input type="password" placeholder="Password" id="password" required>
+          <label>Re-enter Passord: </label> <input type="password" placeholder="Re-enter password" id="confirmPassword" required>
 
           <br /><br /><br />
           <label>Personality Result: </label> <input type="text" placeholder="Result (Example: I.S.T.J)" id="trait" required>
@@ -105,7 +105,8 @@
           <label>By submitting this form, you are agreeing to our privacy policies.</label>
 
           <br /><br /><br />
-          <input class="submitBttn" id="signupBttn" type="submit" value="SIGN UP">
+          <input class="submitBttn" id="signupBttn" type="submit" value="SIGN UP"
+           onclick="redirect('subject')">
 
         </form>
 
@@ -124,7 +125,7 @@
       <br /><br />
       <p class="instructions">Employee 🤖 / User 👨‍💼👩‍💼:</p>
       <br />
-      <form id="loginForm">
+      <form id="loginForm" action="loginUser()">
 
         <br /><br />
         <label>Change Login Option: </label>
